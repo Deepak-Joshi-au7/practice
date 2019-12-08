@@ -1,0 +1,38 @@
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+}
+.column{
+  width: 50%;
+  height:100px;
+}
+.column1{
+  background-color: yellow;
+}
+.column2{
+  background-color: purple;
+}
+@media all and (max-width:860px){
+  .column1{
+    background-color: red;
+  }
+  .column2{
+    background-color: skyblue;
+  }
+}
+@media all and (max-width:700px){
+  .wrapper{
+    flex-wrap: wrap;
+  }
+  .column{
+    width: 100%
+  }
+  .column1{
+    background-color: skyblue;
+  }
+  .column2{
+    background-color: red;
+  }
+}
